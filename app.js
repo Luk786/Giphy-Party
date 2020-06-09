@@ -27,7 +27,7 @@ form.addEventListener('submit', async function(e){
     //get the input value
     let searchTerm = input.value;
     //make axios request 
-    const res = await axios.get("http://api.giphy.com/v1/gifs/search", 
+    const res = await axios.get("http://api.giphy.com/v1/gifs/search/", 
     {params: 
         //get input val
         {q: searchTerm, 
